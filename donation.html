@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate - Shri Ram Janmbhoomi Teerth Kshetra</title>
+  <link rel="stylesheet" href="donate.css">
+  <style>
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fffbe6;
+  color: #333;
+}
+
+/* Banner/Header */
+.header-banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-image: url('https://i.ibb.co/XZf4qZjs/verimag.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-img {
+  display: none; /* hidden since we are using background-image */
+}
+
+.overlay {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color:orange;
+text-shadow: none;
+}
+
+.overlay p {
+  font-size: 18px;
+  margin-top: 8px;
+text-shadow:none;
+}
+
+/* Main Content */
+.donate-section {
+  padding: 30px 20px;
+  background-color: #fffdf5;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.donate-section h2,
+.donate-section h3 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.donate-section ul,
+.donate-section ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 30px 20px;
+  background-color: #fff3e0;
+  text-align: center;
+  border-top: 2px solid orange;
+}
+
+.container h1 {
+  font-size: 24px;
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+
+.donation-options h2 {
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+.donation-options ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.donation-options li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+form#donationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 12px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #d35400;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.donate-footer {
+  background-color: #002244;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.donate-footer a {
+  color: #ffc107;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.donate-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 22px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .donation-options ul,
+  .donate-section ul,
+  .donate-section ol {
+    padding-left: 15px;
+  }
+
+  form#donationForm {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header class="header-banner">
+  <div class="overlay">
+    <h1>Shri Ram Janmbhoomi Teerth Kshetra</h1>
+    <p>Online Donation Services</p>
+  </div>
+</header>
+
+  <main class="donate-section">
+    <section class="intro">
+      <h2>Online Services</h2>
+      <p>आप श्री राम जन्मभूमि तीर्थ क्षेत्र ट्रस्ट को ऑनलाइन दान कर सकते हैं और तुरंत रसीद प्राप्त कर सकते हैं।</p>
+    </section>
+
+    <section class="details">
+      <h3>Donation Instructions</h3>
+      <ul>
+        <li>रसीद तुरंत जनरेट होगी।</li>
+        <li>दान प्रमाणपत्र ईमेल या प्रिंट के रूप में उपलब्ध है।</li>
+        <li>यह दान 80G कर छूट के अंतर्गत आता है।</li>
+      </ul>
+    </section>
+
+    <section class="guidelines">
+      <h3>Important Notes</h3>
+      <ol>
+        <li>सही मोबाइल और ईमेल भरें।</li>
+        <li>दान वापसी योग्य नहीं है।</li>
+        <li>दान के बाद SMS/Email से पुष्टि मिलेगी।</li>
+      </ol>
+    </section>
+  </main>
+
+  <div class="container">
+    <h1>राम मंदिर निर्माण में सहयोग करें</h1>
+    <p>आपका छोटा सा योगदान भी श्रीराम मंदिर निर्माण में महत्वपूर्ण भूमिका निभा सकता है।</p>
+
+    <div class="donation-options">
+      <h2>दान विकल्प:</h2>
+      <ul>
+        <li><strong>UPI:</strong> rammandir@upi</li>
+        <li><strong>बैंक खाता:</strong> XXXX XXXX XXXX</li>
+        <li><strong>QR कोड स्कैन करें</strong></li>
+      </ul>
+    </div>
+
+    <h2>ऑनलाइन दान:</h2>
+    <form id="donationForm">
+      <input type="text" id="name" placeholder="आपका नाम" required>
+      <input type="number" id="amount" placeholder="राशि (₹)" required>
+      <button type="submit">दान करें</button>
+    </form>
+  </div>
+
+  <!-- Modal for confirmation -->
+  <div id="thankYouModal" class="modal">
+    <div class="modal-content">
+      <p id="thankYouText"></p>
+      <button onclick="closeModal()">ठीक है</button>
+    </div>
+  </div>
+
+  <footer class="donate-footer">
+    <p>© 2025 Shri Ram Janmbhoomi Teerth Kshetra | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <script src="donate.js"></script>
+  <script>document.getElementById("donationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const amount = document.getElementById("amount").value;
+
+  document.getElementById("thankYouText").innerText = `धन्यवाद, ${name}! आपने राम मंदिर के सहयोग में ₹${amount} का योगदान किया है, आपके पूरे परिवार पर श्री रामचंद्र जी की कृपा बनी रहे।`;
+  document.getElementById("thankYouModal").style.display = "flex";
+
+  document.getElementById("donationForm").reset();
+});
+
+function closeModal() {
+  document.getElementById("thankYouModal").style.display = "none";
+}</script>
+</body>
+</html>
